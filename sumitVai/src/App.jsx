@@ -11,11 +11,23 @@ import Form from './componets/Form'
 import ClickCounter from './componets/Render_Props/ClickCounter'
 import HoverMouse from './componets/Render_Props/HoverMouse'
 import Counter from './componets/Render_Props/Counter'
+import Section from './componets/context-api/Section'
 
-function App() {
-  // const quantities = [1,3,5,23]
-  return (
-    <>
+
+
+import React, { Component } from 'react'
+
+export default class App extends Component {
+
+   state = {
+    theme: 'dark'
+   }
+
+  render() {
+
+    const {theme} = this.state
+    return (
+      <> 
       {/* <Clock2 local="bn-BD"/>
 
       <Clock3/> */}
@@ -37,10 +49,46 @@ function App() {
         <HoverMouse count = {count} handler={handler} />
     )}/>
     
-  
+
+
+    <Provider value ={}> <Section theme={theme} />  </Provider> 
 
     </>
-  )
+    )
+  }
 }
 
-export default App
+
+
+// function App() {
+  //   // const quantities = [1,3,5,23]
+  //   return (
+  //     <>
+  //       {/* <Clock2 local="bn-BD"/>
+  
+  //       <Clock3/> */}
+  //       {/* <ClockList quantity={quantities} /> */}
+  
+  //      {/* <Form/> */}
+  //      {/* <Calculator/> */}
+  //      {/* <ClickCount/>     */}
+  //      {/* <HoverCounter/>   */}
+  //      {/* <ClickCounter/>
+  //      <HoverMouse/>     */}
+  
+  //      <Counter Renfunc = {(counter,incrementCount)=>(
+  //            <ClickCounter count={counter} incrementCount={incrementCount} />
+             
+  //            )} 
+  //       />
+  //     <Counter Renfunc = {(count, handler)=> (
+  //         <HoverMouse count = {count} handler={handler} />
+  //     )}/>
+      
+  //      <Section/>
+  
+  //     </>
+  //   )
+  // }
+  
+  // export default App
