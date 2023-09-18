@@ -12,6 +12,7 @@ import ClickCounter from './componets/Render_Props/ClickCounter'
 import HoverMouse from './componets/Render_Props/HoverMouse'
 import Counter from './componets/Render_Props/Counter'
 import Section from './componets/context-api/Section'
+import themeContext from './componets/context-api/context/themeContext'
 
 
 
@@ -40,21 +41,28 @@ export default class App extends Component {
      {/* <ClickCounter/>
      <HoverMouse/>     */}
 
-     <Counter Renfunc = {(counter,incrementCount)=>(
+     {/* <Counter Renfunc = {(counter,incrementCount)=>(
            <ClickCounter count={counter} incrementCount={incrementCount} />
            
            )} 
       />
     <Counter Renfunc = {(count, handler)=> (
         <HoverMouse count = {count} handler={handler} />
-    )}/>
+    )}/> */}
     
 
 
-    <Provider value ={}> <Section theme={theme} />  </Provider> 
+    <themeContext.Provider value ={this.state}> 
+    
+          <Section/>  
+    
+    </themeContext.Provider> 
+
+
+
 
     </>
-    )
+    ) 
   }
 }
 

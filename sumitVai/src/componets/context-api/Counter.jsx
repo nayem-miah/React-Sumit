@@ -13,9 +13,10 @@ export default class Counter extends Component {
 
   render() {
     const {count} = this.state;
-    const {Renfunc} = this.props;
+    const {children} = this.props;
     
-    return Renfunc(count, this.ClickHandler);
+    return children(count, this.ClickHandler);
   }
 }
- 
+
+
