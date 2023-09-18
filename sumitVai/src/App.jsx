@@ -41,7 +41,9 @@ export default class App extends Component {
      {/* <ClickCounter/>
      <HoverMouse/>     */}
 
-     {/* <Counter Renfunc = {(counter,incrementCount)=>(
+
+    {/* // render props....................................................................
+     <Counter Renfunc = {(counter,incrementCount)=>(
            <ClickCounter count={counter} incrementCount={incrementCount} />
            
            )} 
@@ -51,12 +53,12 @@ export default class App extends Component {
     )}/> */}
     
 
-
+   {/* // context api............................................................
     <themeContext.Provider value ={this.state}> 
     
           <Section/>  
     
-    </themeContext.Provider> 
+    </themeContext.Provider>  */}
 
 
 
