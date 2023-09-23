@@ -14,8 +14,8 @@ export default function Content() {
             {(count, handler) =>(
                <themeContext.Consumer> 
 
-                  {({theme})=>(
-                      <HoverMouse count={count} handler={handler} theme={theme}/>
+                  {({theme,switchHandler})=>(
+                      <HoverMouse count={count} handler={handler} theme={theme} switchHandler={switchHandler}/>
                                  )}
 
                </themeContext.Consumer>
