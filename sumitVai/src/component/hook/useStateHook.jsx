@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function WithFunction() {
+export default function UseStateHook() {
 
   const [count, setCounter] = React.useState(0)
 
@@ -21,6 +21,7 @@ export default function WithFunction() {
     </div>
   )
 }
+
 
 
 

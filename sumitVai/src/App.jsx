@@ -1,7 +1,8 @@
 
 import React, { Component } from 'react'
 // import WithClass from './component/hook/withClass'
-import WithFunction from './component/hook/WithFunction'
+import UseStateHook from './component/hook/useStateHook'
+import UseEffectHook from './component/hook/useEffectHook'
 
 export default class App extends Component {
 
@@ -14,7 +15,8 @@ export default class App extends Component {
     return (
       <> 
       {/* <WithClass/> */}
-      <WithFunction/>
+      <UseStateHook/>
+      <UseEffectHook/>
         
     </>
     ) 
