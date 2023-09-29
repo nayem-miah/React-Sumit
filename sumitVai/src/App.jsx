@@ -4,24 +4,31 @@ import React, { Component } from 'react'
 import UseStateHook from './component/hook/useStateHook'
 import UseEffectHook from './component/hook/useEffectHook'
 
-export default class App extends Component {
+
+
+export default function App() {
+
+  const [show, setShow] = React.useState(true)
+  return (
+       <div>
+          
+        <div> {show && <UseEffectHook/> }</div>
+
+        <p>
+
+          <button type='button' onClick={()=> setShow((prevShow)=> !prevShow)}>
+            {show ? 'Hide post' : 'SHow post'}
+          </button>
+        </p>
 
 
 
-  render() {
-
-  
+        {/* <WithClass/> */}
+      {/* <UseStateHook/> */}
     
-    return (
-      <> 
-      {/* <WithClass/> */}
-      <UseStateHook/>
-      <UseEffectHook/>
-        
-    </>
-    ) 
-  }
+      
+    </div>
+  )
 }
-
 
 
