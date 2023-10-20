@@ -9,9 +9,12 @@ export default function Form() {
     React.useEffect(() => {
         
        inputRef.current.focus()
+       console.log('hi this is nayem...')
+
 
     },[])
 
+    console.log('hi this is nayem...')
 
   return (
     <div>
