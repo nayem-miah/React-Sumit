@@ -67,11 +67,9 @@ export default class Clock extends Component {
 
 
 
-
-
 // 1= render method will reander data, they will go on DOM,
 // 2= when data is on DOM, componentDidMount method will be called automatically 
-// 3 = this.setState will change the data and remder method again render 
+// 3 = this.setState will change the data and render method again render 
 
 // 4 = componentDidMount will be called again and again
 // 5 = to stop it when user is in other page we use componentWillUnmount method 
