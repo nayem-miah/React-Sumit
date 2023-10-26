@@ -3,6 +3,7 @@ import Button from './component/hook/useMemoUseCallback/Button'
 import ShowCount from './component/hook/useMemoUseCallback/ShowCount'
 import Title from './component/hook/useMemoUseCallback/Title'
 import Form from './component/hook/useRef/Form'
+import ComplexCounter from './component/hook/useReducer/ComplexCounter'
 export default function App() {
 
   const [count1, setCount1] = React.useState(0)
@@ -51,7 +52,8 @@ const isEvenOrOdd = React.useMemo(()=>{
 return(
   <div>
    
-   <Form/>
+   {/* <Form/> */}
+   <ComplexCounter/>
 
   </div>
 )

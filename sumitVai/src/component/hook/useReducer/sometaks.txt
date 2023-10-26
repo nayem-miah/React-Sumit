@@ -1,0 +1,7 @@
+
+**useState() hook is created based on useReducer() hook
+
+**useReducer() hook is an alternative to useState() hook
+
+
+    
