@@ -4,6 +4,8 @@ import ShowCount from './component/hook/useMemoUseCallback/ShowCount'
 import Title from './component/hook/useMemoUseCallback/Title'
 import Form from './component/hook/useRef/Form'
 import CounterLast from './component/hook/useReducer/CountLast'
+import GetPost from './component/hook/useReducer/GetPost'
+import GetPost2 from './component/hook/useReducer/GetPost2'
 export default function App() {
 
   const [count1, setCount1] = React.useState(0)
@@ -53,7 +55,9 @@ return(
   <div>
    
    {/* <Form/> */}
-   <CounterLast/>
+   {/* <CounterLast/> */}
+   {/* <GetPost/> */}
+   <GetPost2/>
 
   </div>
 )
