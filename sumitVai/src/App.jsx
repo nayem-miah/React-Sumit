@@ -6,6 +6,8 @@ import Form from './component/hook/useRef/Form'
 import CounterLast from './component/hook/useReducer/CountLast'
 import GetPost from './component/hook/useReducer/GetPost'
 import GetPost2 from './component/hook/useReducer/GetPost2'
+import LayoutComponent from './component/hook/customHook/LayoutComponent'
+import LayoutComponentTwo from './component/hook/customHook/LayoutComponentTwo'
 export default function App() {
 
   const [count1, setCount1] = React.useState(0)
@@ -50,21 +52,39 @@ const isEvenOrOdd = React.useMemo(()=>{
 
 
 
-// useRef........................
+// // useRef........................
+
+
+// return(
+//   <div>
+   
+//    {/* <Form/> */}
+//    {/* <CounterLast/> */}
+//    {/* <GetPost/> */}
+//    <GetPost2/>
+
+//   </div>
+// )
+// // useRef........................
+
+
+
+// custom hook
+
 return(
   <div>
-   
-   {/* <Form/> */}
-   {/* <CounterLast/> */}
-   {/* <GetPost/> */}
-   <GetPost2/>
+     <h1>this is custom hook</h1>
+     {/* <LayoutComponent/> */}
+     <LayoutComponentTwo/>
+
+
 
   </div>
 )
-// useRef........................
 
 
 
+// custom hook
 
 
 
