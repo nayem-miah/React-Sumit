@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import {convert} from './converter'
 import Input from './Input'
 import Capablity from './Capablity'
-export default class Calculator extends Component {
+export default class CmInchCalculator extends Component {
   state = {
       feet:"",
       inch:"",
