@@ -1,0 +1,9 @@
+The sequence to maintain to learn React
+1. components
+2. event handlers
+3. lifting state up
+4. Higher Order components
+5. renader props
+6. context api
+7. Hooks 
+8. life cycle methods
